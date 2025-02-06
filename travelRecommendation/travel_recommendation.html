@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Recommendation Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <h1>Travel Recommendations</h1>
+    <ul>
+      <li><a href="travel_recommendation.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for beaches, temples, or countries...">
+      <button id="search-btn">Search</button>
+      <button id="reset-btn">Reset</button>
+    </div>
+  </nav>
+
+  <section id="home" class="home-section">
+    <div class="intro">
+      <h1>Welcome to Travel Recommendations</h1>
+      <p>Discover the best travel destinations around the world. Whether you're looking for beaches, temples, or countries to explore, we've got you covered!</p>
+    </div>
+    <div class="social-icons">
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="youtube.png" alt="YouTube"></a>
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+    </div>
+  </section>
+
+  <section id="results" class="results-section" style="display: none;">
+    <h2>Recommendations</h2>
+    <div id="recommendations" class="recommendations-grid"></div>
+  </section>
+
+  <script src="travel_recommendation.js"></script>
+</body>
+</html>
